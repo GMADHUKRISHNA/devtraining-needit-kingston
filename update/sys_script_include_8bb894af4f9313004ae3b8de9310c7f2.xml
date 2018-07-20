@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_58872_needit.madhu_script_include3</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>madhu_script_include3</name>
+        <script><![CDATA[var madhu_script_include3 = Class.create();
+madhu_script_include3.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    type: 'madhu_script_include3',
+	me: function() {
+		var who1 = this.getParameter("sysparm_who");
+		var who2 = this.getParameter("sysparm_who2");
+		var who3 = this.getParameter("sysparm_who3");
+		return me2(who1, who2, who3);
+	},
+	
+	me2 : function(who1, who2, who3) {
+		var output = "Hello " + who1;
+		if (who2) 
+			output += " and " + who2;
+		if (who3) 
+			output += " and " + who3;
+		return output;
+	}
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-20 11:07:22</sys_created_on>
+        <sys_id>8bb894af4f9313004ae3b8de9310c7f2</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>madhu_script_include3</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_8bb894af4f9313004ae3b8de9310c7f2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-20 12:16:18</sys_updated_on>
+    </sys_script_include>
+</record_update>

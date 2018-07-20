@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_58872_needit.madhu_script_include2</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>madhu_script_include2</name>
+        <script><![CDATA[function madhu_script_include2(name) {
+	gs.addInfoMessage("Inside madhu script include2");
+		return "Hello " + name;
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-20 10:26:42</sys_created_on>
+        <sys_id>c7f5d82f4f9313004ae3b8de9310c748</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>madhu_script_include2</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_c7f5d82f4f9313004ae3b8de9310c748</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-20 10:33:43</sys_updated_on>
+    </sys_script_include>
+</record_update>

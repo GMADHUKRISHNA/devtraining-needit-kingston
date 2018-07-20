@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_58872_needit.first_script_include1</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>first_script_include1</name>
+        <script><![CDATA[var first_script_include1 = Class.create();
+first_script_include1.prototype = {
+    initialize: function(greeting) {
+		this.greeting = greeting;
+    },
+
+    type: 'first_script_include1',
+	
+	sayHello: function(name) {
+		return (this.greeting ? greeting : "Hello ") + name;
+	}
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-20 08:44:13</sys_created_on>
+        <sys_id>1d2eb7df4f5313004ae3b8de9310c73e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>first_script_include1</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_1d2eb7df4f5313004ae3b8de9310c73e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-20 10:19:30</sys_updated_on>
+    </sys_script_include>
+</record_update>
