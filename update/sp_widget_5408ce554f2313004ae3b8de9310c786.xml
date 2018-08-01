@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function () {
+  /* widget controller */
+  var c = this;
+		var params = c.options.widget_parameters;
+		params = JSON.parse(params);
+		c.data.operator = params.operator;
+		c.data.f1= 10;
+		c.data.f2 = 20;
+		
+	c.calci = function() {
+		switch(c.data.operator) {
+			case "*" :
+				 c.data.result = parseFloat(c.data.f1) * parseFloat(c.data.f2);
+				 break;	
+			case "/" :
+				 c.data.result = parseFloat(c.data.f1) / parseFloat(c.data.f2);
+				 break;	
+			case "+" :
+				 c.data.result = parseFloat(c.data.f1) + parseFloat(c.data.f2);
+				break;
+			case "-" :
+				 c.data.result = parseFloat(c.data.f1) - parseFloat(c.data.f2);
+				 break;	
+			default:
+				c.data.result = c.data.f1 + "  " + c.data.f2;
+		}
+	}
+	
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data>{
+	
+}</demo_data>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>needit-info</id>
+        <internal>false</internal>
+        <link/>
+        <name>needit info</name>
+        <option_schema>[{"name":"operator","section":"other","default_value":"+","label":"operator","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-26 05:11:23</sys_created_on>
+        <sys_id>5408ce554f2313004ae3b8de9310c786</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>needit info</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sp_widget_5408ce554f2313004ae3b8de9310c786</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-26 12:10:27</sys_updated_on>
+        <template><![CDATA[<div css="border:2">
+   <h3>
+      Calci
+  </h3>
+<!-- your widget template -->
+  <div class="mad-field">
+    <input ng-model="c.data.f1" /> 
+  </div>
+  <div>
+      {{ c.data.operator }}"    
+  </div>
+  <div class="mad-field">
+    <input ng-model="c.data.f2" ng-change="c.calci()"/>
+  </div>
+  <div class="mad-field">
+    {{ c.data.result }}
+  </div>
+  
+</div>]]></template>
+    </sp_widget>
+</record_update>
