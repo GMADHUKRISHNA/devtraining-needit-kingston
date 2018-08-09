@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description>For trying out</description>
+        <direct>false</direct>
+        <endpoint>x_58872_needit_mad_ui_page1.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+	<h1> Hello </h1>
+	<div ng-app="">
+		Type here: <input type="text" ng-model="var1" size="30"/>
+		{{ var1 }}
+	</div>	
+</j:jelly>]]></html>
+        <name>mad_ui_page1</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-01 11:48:06</sys_created_on>
+        <sys_id>a61c1a9f4fa313004ae3b8de9310c789</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>mad_ui_page1</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ui_page_a61c1a9f4fa313004ae3b8de9310c789</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-01 13:29:08</sys_updated_on>
+    </sys_ui_page>
+</record_update>
